@@ -3,6 +3,7 @@ import { ComingSoon } from "./comingSoon";
 import { majority } from "./majority";
 import { impostor } from "./impostor";
 import { reaction } from "./reaction";
+import { timing } from "./timing";
 
 /**
  * Registry aller Spiele. Neues Spiel: Modul anlegen (GameModule) und hier eintragen.
@@ -26,7 +27,7 @@ export const games: GameModule[] = [
   }),
   majority,
   reaction,
-  planned({ id: "timing", name: "Timing", emoji: "⏱️", description: "Triff die Zielzeit ohne Uhr.", kind: "mini", color: "bg-sun" }),
+  timing,
   impostor,
 ];
 
