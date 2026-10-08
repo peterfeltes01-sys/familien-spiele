@@ -1,6 +1,7 @@
 import type { GameModule } from "./types";
 import { ComingSoon } from "./comingSoon";
 import { majority } from "./majority";
+import { impostor } from "./impostor";
 
 /**
  * Registry aller Spiele. Neues Spiel: Modul anlegen (GameModule) und hier eintragen.
@@ -25,7 +26,7 @@ export const games: GameModule[] = [
   majority,
   planned({ id: "reaction", name: "Reaktion", emoji: "⚡", description: "Wer tippt zuerst auf Grün?", kind: "mini", color: "bg-mint" }),
   planned({ id: "timing", name: "Timing", emoji: "⏱️", description: "Triff die Zielzeit ohne Uhr.", kind: "mini", color: "bg-sun" }),
-  planned({ id: "impostor", name: "Der Hochstapler", emoji: "🕵️", description: "Einer kennt das Wort nicht. Wer ist es?", kind: "mini", color: "bg-tomato" }),
+  impostor,
 ];
 
 export const getGame = (id: string) => games.find((g) => g.id === id);
