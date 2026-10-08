@@ -13,4 +13,4 @@ npm run build
 Aufbau: `src/lib` (Spielstand/localStorage), `src/components` (UI, Übergabebildschirm `SecretTurn`, Rangliste, Konfetti),
 `src/games` (ein Ordner pro Spiel, Registry in `src/games/index.ts`, Schnittstelle `GameModule` in `src/games/types.ts`).
 
-Stand: Grundgerüst + Mini-Spiele „Mehrheit gewinnt“, „Der Hochstapler“, „Reaktion“ und „Timing“. Weitere Spiele sind als „bald“-Karten vorbereitet.
+Stand: Grundgerüst und alle fünf Spiele (Begriffs-Marathon, Mehrheit gewinnt, Der Hochstapler, Reaktion, Timing).
