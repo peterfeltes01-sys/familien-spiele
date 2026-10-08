@@ -1,0 +1,38 @@
+/** Kategorien für Phase 1 (Stadt-Land-Fluss). Einfach Einträge ergänzen oder streichen. */
+export const CATEGORIES = [
+  "Film",
+  "Tier",
+  "Stadt",
+  "Beruf",
+  "Essen",
+  "Promi",
+  "Land",
+  "Fluss oder See",
+  "Getränk",
+  "Sportart",
+  "Musikinstrument",
+  "Obst oder Gemüse",
+  "Automarke",
+  "Kleidungsstück",
+  "Märchenfigur",
+  "Pflanze",
+  "Hobby",
+  "Schulfach",
+  "Möbelstück",
+  "Werkzeug",
+  "Serie",
+  "Lied oder Band",
+  "Urlaubsziel",
+  "Körperteil",
+  "Spielzeug",
+  "Comicfigur",
+  "Fahrzeug",
+  "Süßigkeit",
+  "Ding im Badezimmer",
+  "Ding in der Küche",
+  "Buch oder Autor",
+  "Beliebter Vorname",
+];
+
+/** Buchstaben, mit denen sich gut Begriffe finden lassen (ohne Q, X, Y, Ü …). */
+export const LETTERS = "ABCDEFGHKLMNOPRSTWZ".split("");
