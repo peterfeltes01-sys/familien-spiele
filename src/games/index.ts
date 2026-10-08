@@ -2,6 +2,7 @@ import type { GameModule } from "./types";
 import { ComingSoon } from "./comingSoon";
 import { majority } from "./majority";
 import { impostor } from "./impostor";
+import { reaction } from "./reaction";
 
 /**
  * Registry aller Spiele. Neues Spiel: Modul anlegen (GameModule) und hier eintragen.
@@ -24,7 +25,7 @@ export const games: GameModule[] = [
     color: "bg-grape",
   }),
   majority,
-  planned({ id: "reaction", name: "Reaktion", emoji: "⚡", description: "Wer tippt zuerst auf Grün?", kind: "mini", color: "bg-mint" }),
+  reaction,
   planned({ id: "timing", name: "Timing", emoji: "⏱️", description: "Triff die Zielzeit ohne Uhr.", kind: "mini", color: "bg-sun" }),
   impostor,
 ];
