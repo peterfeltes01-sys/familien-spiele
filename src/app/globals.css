@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff8e7;
+  --color-ink: #2b2250;
+  --color-grape: #7c3aed;
+  --color-pink: #ff5c93;
+  --color-sun: #ffc52e;
+  --color-mint: #2ed1a0;
+  --color-sky: #3ba7ff;
+  --color-tomato: #ff6240;
+  --font-display: "Baloo 2", "Nunito", ui-rounded, system-ui, sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: ui-rounded, "Nunito", system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+body {
+  background-image: radial-gradient(circle at 15% 10%, #ffe1ec 0, transparent 35%),
+    radial-gradient(circle at 90% 85%, #dcd0ff 0, transparent 40%);
+  background-attachment: fixed;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+input {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  70% { transform: scale(1.06); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-pop { animation: pop 0.35s ease-out both; }
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+.animate-wiggle { animation: wiggle 1.6s ease-in-out infinite; }
